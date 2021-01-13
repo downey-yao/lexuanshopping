@@ -1,0 +1,121 @@
+/* pages/user/index.wxss */
+page {
+    background-color: #edece8;
+}
+.user_info_wrap {
+    height: 45vh;
+    background-color: var(--themeColor);
+    .user_img_wrap {
+        .user_bg {
+            height: 46vh;
+            // 高斯模糊
+            filter: blur(5rpx);
+            overflow: hidden;
+        }
+        .user_info {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            .user_icon {
+                height: 150rpx;
+                width: 150rpx;
+                border-radius: 50%;
+            }
+            .user_name {
+                margin-top: 30rpx;
+                color: #fff;
+                font-size: 35rpx;
+            }
+        }
+    }
+
+    .user_btn_login {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15rpx 25rpx;
+        border: 2rpx solid #fff;
+        border-radius: 10rpx;
+        color: #fff;
+    }
+}
+
+.user_content {
+    position: relative;
+    .user_main {
+        width: 90%;
+        position: absolute;
+        top: -20rpx;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .history_wrap {
+            display: flex;
+            background-color: #fff;
+            navigator {
+                flex: 1;
+                text-align: center;
+                .his_num {
+                    margin: 10rpx 0;
+                }
+                .his_name {
+                    margin-bottom: 15rpx;
+                }
+            }
+        }
+        /* 订单 */
+        .order_wrap {
+            background-color: #fff;
+            margin: 20rpx 0;
+            padding: 15rpx 0;
+
+            .order_title {
+                margin-left: 24rpx;
+                padding-bottom: 15rpx;
+                border-bottom: 1rpx solid #ccc;
+            }
+            .order_content {
+                padding-top: 15rpx;
+                display: flex;
+                navigator {
+                    flex: 1;
+                    text-align: center;
+                    .iconfont {
+                        padding-bottom: 10rpx;
+                        color: var(--themeColor);
+                        font-size: 40rpx;
+                    }
+                    .order_name {}
+                }
+            }
+        }
+
+        .receipt_address {
+            background-color: #fff;
+            margin: 15rpx 0;
+            padding: 15rpx;
+        }
+
+        .other_wrap {
+            background-color: #fff;
+            .other {
+                padding: 15rpx;
+            }
+            .suggestion {
+                border-top: 1rpx solid #ccc;
+                border-bottom: 1rpx solid #ccc;
+            }
+        }
+
+        .recommend {
+            padding: 15rpx;
+            margin-top: 20rpx;
+            margin-bottom: 100rpx;
+            background-color: #fff;
+        }
+    }
+}
+

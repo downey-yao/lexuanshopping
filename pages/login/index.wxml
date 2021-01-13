@@ -1,0 +1,2 @@
+<!--pages/logi/index.wxml-->
+<button type="primary" plain="{{true}}" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">登录</button>

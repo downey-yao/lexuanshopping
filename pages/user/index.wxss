@@ -1,0 +1,109 @@
+/* pages/user/index.wxss */
+page {
+  background-color: #edece8;
+}
+.user_info_wrap {
+  height: 45vh;
+  background-color: var(--themeColor);
+}
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 46vh;
+  filter: blur(5rpx);
+  overflow: hidden;
+}
+.user_info_wrap .user_img_wrap .user_info {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.user_info_wrap .user_img_wrap .user_info .user_icon {
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_info .user_name {
+  margin-top: 30rpx;
+  color: #fff;
+  font-size: 35rpx;
+}
+.user_info_wrap .user_btn_login {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15rpx 25rpx;
+  border: 2rpx solid #fff;
+  border-radius: 10rpx;
+  color: #fff;
+}
+.user_content {
+  position: relative;
+}
+.user_content .user_main {
+  width: 90%;
+  position: absolute;
+  top: -20rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  /* 订单 */
+}
+.user_content .user_main .history_wrap {
+  display: flex;
+  background-color: #fff;
+}
+.user_content .user_main .history_wrap navigator {
+  flex: 1;
+  text-align: center;
+}
+.user_content .user_main .history_wrap navigator .his_num {
+  margin: 10rpx 0;
+}
+.user_content .user_main .history_wrap navigator .his_name {
+  margin-bottom: 15rpx;
+}
+.user_content .user_main .order_wrap {
+  background-color: #fff;
+  margin: 20rpx 0;
+  padding: 15rpx 0;
+}
+.user_content .user_main .order_wrap .order_title {
+  margin-left: 24rpx;
+  padding-bottom: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.user_content .user_main .order_wrap .order_content {
+  padding-top: 15rpx;
+  display: flex;
+}
+.user_content .user_main .order_wrap .order_content navigator {
+  flex: 1;
+  text-align: center;
+}
+.user_content .user_main .order_wrap .order_content navigator .iconfont {
+  padding-bottom: 10rpx;
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.user_content .user_main .receipt_address {
+  background-color: #fff;
+  margin: 15rpx 0;
+  padding: 15rpx;
+}
+.user_content .user_main .other_wrap {
+  background-color: #fff;
+}
+.user_content .user_main .other_wrap .other {
+  padding: 15rpx;
+}
+.user_content .user_main .other_wrap .suggestion {
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+}
+.user_content .user_main .recommend {
+  padding: 15rpx;
+  margin-top: 20rpx;
+  margin-bottom: 100rpx;
+  background-color: #fff;
+}

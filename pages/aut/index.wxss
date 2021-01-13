@@ -1,0 +1,6 @@
+/* pages/aut/index.wxss */
+
+button {
+    margin-top: 40rpx;
+    width: 80%;
+}
